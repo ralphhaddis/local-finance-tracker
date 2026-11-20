@@ -1,0 +1,37 @@
+# Local financial data and exports: never add these to version control.
+/data/
+/inbox/
+/archived/
+/rejected/
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.db-*
+*.csv
+*.pdf
+*.numbers
+*.ofx
+*.qfx
+*.log
+
+# Local secrets and machine-specific configuration.
+.env
+.env.*
+!.env.example
+.envrc
+secrets/
+credentials*.json
+token*.json
+*.pem
+*.p12
+*.key
+
+# macOS and Python-generated files.
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.venv/
+**/.build/
+__pycache__/
+*.py[cod]

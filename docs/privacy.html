@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the personal local-finance-tracker budgeting application handles bank data.">
+  <title>Privacy policy · local-finance-tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <a class="back" href="./">← local-finance-tracker</a>
+    <p class="eyebrow">PERSONAL FINANCE · LOCAL APP</p>
+    <h1>Privacy policy</h1>
+    <p class="small">Last updated: 27 September 2026</p>
+
+    <h2>About this app</h2>
+    <p>local-finance-tracker is a private budgeting application used by its owner on their own Mac. It is not a public service and is not offered to other users.</p>
+
+    <h2>Bank information</h2>
+    <p>If the owner enables Open Banking, local-finance-tracker requests read-only account and transaction information for the owner's linked NatWest account through Enable Banking. The owner approves access through NatWest and can withdraw consent using NatWest's consent controls. local-finance-tracker does not initiate payments.</p>
+    <p>Information returned to local-finance-tracker may include account names and identifiers, balances, transaction dates, amounts, descriptions, and references. The app stores imported transactions and categories in its local SQLite database. It also saves connection and consent-session details in a local file. The app's categorisation and review features operate locally.</p>
+
+    <h2>Where information goes</h2>
+    <p>Bank connection and data requests are made to Enable Banking, which provides the Open Banking connection to NatWest. NatWest handles the account authorisation and supplies the permitted data. During authorisation, Cloudflare Tunnel forwards the HTTPS callback to the local local-finance-tracker process; the callback contains temporary authorisation parameters, not transaction history or bank login credentials. The local-finance-tracker app does not intentionally upload the resulting transaction database to a website or cloud service. Anyone who can access this Mac, the project folder, or a backup may be able to access locally stored data.</p>
+    <p>This policy page is hosted by GitHub Pages. GitHub may process technical information about visits to the page under its own <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy Statement</a>. Bank data is not published on this website.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>Information remains in the local database and connection file until the owner deletes those files. Copies may remain in the owner's backups or in any statement files the owner has saved. To stop future access, the owner can revoke the consent with NatWest. To remove local copies, stop local-finance-tracker and delete the relevant files from its <code>data/</code>, <code>archived/</code>, and backup folders.</p>
+
+    <h2>Security</h2>
+    <p>The Enable Banking private key should be kept outside the project folder and protected by the owner. local-finance-tracker is designed to run locally, but the owner is responsible for securing the Mac, files, and backups.</p>
+
+    <h2>Contact</h2>
+    <p>For questions about this personal application, contact its owner through the <a href="https://github.com/ralphhaddis">GitHub profile</a>.</p>
+
+    <footer><a href="terms.html">Terms of use</a> · <a href="./">Home</a></footer>
+  </main>
+</body>
+</html>

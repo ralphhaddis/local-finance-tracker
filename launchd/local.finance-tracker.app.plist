@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>local.finance-tracker.app</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>__LFT_PROJECT__/.venv/bin/python</string>
+    <string>__LFT_PROJECT__/src/web.py</string>
+  </array>
+  <key>WorkingDirectory</key>
+  <string>__LFT_PROJECT__</string>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>KeepAlive</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>__LFT_PROJECT__/data/service.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>__LFT_PROJECT__/data/service.err.log</string>
+</dict>
+</plist>
